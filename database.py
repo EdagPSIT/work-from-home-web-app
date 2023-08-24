@@ -6,7 +6,10 @@ import os
 from dotenv import load_dotenv
 
 
-db_url = os.getenv(DB_STRING)
+load_dotenv()
+db_url = os.environ.get("DB_STRING")
+print("DB_STRING")
+print(db_url)
 engine = create_engine(db_url)
 
 Base = declarative_base()
