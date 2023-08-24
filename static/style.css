@@ -1,0 +1,169 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Change color and style of menu items */
+.menu-item {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Centered form and container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h2.success-message {
+    color: #4caf50;
+    margin-top: 20px;
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    /* background-color: #2196F3; */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a74da;
+}
+
+/* Manager page table styles */
+.wfh-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.wfh-table th,
+.wfh-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.wfh-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Approve and reject buttons */
+.buton {
+    display: flex;
+    flex-direction: column;
+}
+/* #action1{
+    display: inline-flex;
+    width:auto;
+} */
+
+.approve-button,
+.reject-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+    width: 80px;
+    text-align: center;
+}
+
+.approve-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+}
+
+.approve-button:hover {
+    background-color: #45a049;
+}
+
+.reject-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+}
+
+.reject-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

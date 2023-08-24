@@ -1,0 +1,9 @@
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='logo.png') }}" alt="Company Logo"></a>
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="{{ url_for('index') }}" class="menu-item">Employee</a></li>
+        <li><a href="{{ url_for('manager') }}" class="menu-item">Manager</a></li>
+    </ul>
+</nav>

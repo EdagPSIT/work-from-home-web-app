@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manager Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include 'menu.html' %}
+
+    <div class="container">
+        <h1>Manager Page</h1>
+        <table class="wfh-table">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Employee ID</th>
+                    <th>WFH Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for application in applications %}
+                    <tr>
+                        <td>{{ application.employee_name }}</td>
+                        <td>{{ application.emp_id }}</td>
+                        <td>{{ application.wfh_date }}</td>
+                        <td>
+                            
+                            <form method="post">
+                                <input type="hidden" name="application_id" value="{{ application.id }}">
+                                <button type="submit" name="action" value="approve" class="approve-button">Approve</button>
+                                <button type="submit" name="action" value="reject" class="reject-button">Reject</button>
+                            </form>
+                        
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Company Name {{ current_year }}</p>
+    </footer>
+</body>
+</html>
